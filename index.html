@@ -54,9 +54,10 @@
             background: #f3f4f6;
         }
         .img-wrapper img {
-            width: 100%;
+            width: 40%;
             height: auto;
             display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -136,9 +137,7 @@
                     </div>
                 </div>
                 <div class="photo-text-container">
-                    <div class="text-xs font-bold text-yellow-600 mb-2 uppercase tracking-widest">Photograph ${index + 1}</div>
-                  
-                    <p class="text-gray-700 text-lg leading-relaxed">${item.desc}</p>
+                    <p class="text-gray-700 text-[1.6875rem] leading-relaxed">${item.desc}</p>
                 </div>
             `;
             gallery.appendChild(row);
