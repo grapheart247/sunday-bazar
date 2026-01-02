@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Markets: A Weekly Urban Ritual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+            color: #1a1a1a;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            height: 70vh;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://app.box.com/shared/static/p6wfjzpby7j3zjzemxzee7zh1e5mgmn7.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+        .photo-row {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 8rem;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .photo-row {
+                flex-direction: row;
+                gap: 4rem;
+            }
+            .photo-row:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+            .photo-img-container, .photo-text-container {
+                flex: 1;
+            }
+        }
+        .img-wrapper {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+            overflow: hidden;
+            background: #f3f4f6;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="text-center px-4">
+            <h1 class="text-white text-5xl md:text-7xl font-bold drop-shadow-lg">Sunday Markets</h1>
+            <p class="text-white text-xl md:text-2xl mt-4 font-light tracking-widest uppercase">A Weekly Urban Ritual</p>
+        </div>
+    </div>
+
+    <!-- Intro Content -->
+    <header class="max-w-4xl mx-auto mb-32 px-6">
+        <div class="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed text-left border-l-4 border-yellow-500 pl-6 md:pl-10">
+            <p>
+                Sunday Bazar is a weekly market commonly found in Pakistani cities, especially in Karachi, Lahore, and other major urban centers. Sunday Bazar is a weekly market that plays an important role in urban life, especially for low- and middle-income communities who rely on it for affordable goods and daily necessities. Set up early in the morning and dismantled by evening, the bazar transforms ordinary streets or open grounds into a busy commercial space filled with vendors selling vegetables, fruits, clothes, household items, footwear, and second-hand goods.
+            </p>
+            <p>
+                The market operates as part of the informal economy, where sellers depend on daily earnings rather than fixed salaries, making Sunday Bazar a crucial source of livelihood for many families. The atmosphere of the bazar is lively and crowded, with constant movement as buyers walk through narrow pathways, stopping to bargain, compare prices, and interact with shopkeepers.
+            </p>
+            <p>
+                The variety of goods available in one place makes it a practical and accessible option for people from different social backgrounds. Vendors arrange their products on carts, plastic sheets, or temporary stalls, creating a visually dense environment that appears informal but functions efficiently.
+            </p>
+            <p>
+                Beyond commerce, Sunday Bazar also serves as a social space where neighbors meet, conversations take place, and relationships between sellers and regular customers develop over time. Despite these challenges, Sunday Bazar continues to thrive because it fulfills essential needs that formal systems often fail to meet.
+            </p>
+        </div>
+    </header>
+
+    <!-- Photo Gallery (One per row) -->
+    <main class="max-w-6xl mx-auto px-6" id="gallery">
+        <!-- Rows will be injected here via JavaScript -->
+    </main>
+
+    <!-- Concluding Statement -->
+    <section class="mt-24 mb-32 max-w-4xl mx-auto px-6 text-lg md:text-2xl text-gray-700 italic leading-relaxed text-center">
+        <p class="bg-gray-100 p-10 rounded-lg shadow-sm">
+            "The photographs show this reality through ordinary yet meaningful moments... Overall, Sunday Bazar represents more than a marketplace; it is a reflection of economic survival, social interaction, and everyday urban life."
+        </p>
+    </section>
+
+    <footer class="py-12 border-t border-gray-200 text-center text-gray-500">
+        <p>© 2024 Visual Ethnography: Sunday Bazar Series</p>
+    </footer>
+
+    <script>
+        const photos = [
+            { file: "https://app.box.com/shared/static/bnpt59uej7y9mj7sq3dg4pr1jhdnh4ok.jpg", desc: "Large fabric canopies stretch over the market, shielding rows of household goods and clothing from the sun. People pack the narrow walkways, buying and selling under the worn, patchwork roofs of the Sunday bazaar." },
+            { file: "photo 2.jpg", desc: "Rows of fabric and clothing stalls line the open-air market, with vendors standing ready behind their colorful displays. The dirt path below is largely empty of foot traffic, offering a clear view of the merchandise waiting to be sold." },
+            { file: "photo 3.jpg", desc: "Rows of brightly colored pickle jars sit patiently on a wooden table as the vendor waits for customers. Each container carries the taste of tradition, turning the Sunday Market into a place where food and livelihood meet." },
+            { file: "photo 4.jpg", desc: "An art vendor displays his collection under a shaded tent, featuring a mix of architectural sketches and colorful paintings with Arabic calligraphy. A small table sits at the front, holding smaller pieces for sale as the market bustles around him." },
+            { file: "photo 5.jpg", desc: "A yellow awning marked with English and Urdu text stands out against a peeling white wall, advertising paint services and a complaints center. A motorcycle rests nearby, framed by a red container and the open sky, marking a small service point along the road." },
+            { file: "photo 6.jpg", desc: "Amidst the day’s activity, a moment of devotion takes place under a makeshift canopy. There’s a prayer area where people can pray peacefully." },
+            { file: "photo 7.jpg", desc: "Food carts line the edge of the Sunday Market, providing affordable snacks and drinks to visitors. The photograph documents the market’s function as a temporary economic and social space shaped by mobility and informal labor." },
+            { file: "photo 8.jpg", desc: "A man sits quietly on the dusty ground at the center of the Sunday Market, momentarily detached from the surrounding movement of shoppers and vendors. The image reflects the unseen lives and struggles that coexist with the market’s daily commerce." },
+            { file: "https://app.box.com/shared/static/khi82aoo95hc673t065yyzxdous4pw9k.jpg", desc: "A young man in a red jacket sits perched on a blue container, tending to his stall of water and beverages he waits for customers seeking a cold drink at his roadside post." },
+            { file: "photo 10.jpg", desc: "Makeshift homes constructed from wood and cloth line a muddy path in a slum area located just behind the Sunday bazar. Many people from this slum earn their livelihood from this bazar." },
+            { file: "photo 11.jpg", desc: "Abdullah, who has been working here for past 5 years, earns his livelihood by hardwork and dedication. He is selling socks and is grateful and thankful to god." },
+            { file: "photo 12.jpg", desc: "As night falls, the market stays illuminated and buzzing. Bright lights flood the stalls, where vendors sell plastic wares and utensils to late-night customers navigating the littered, energetic grounds." },
+            { file: "photo 13.jpg", desc: "Even though it is late, this vegetable stand is fully stocked. Green beans, radishes, and leafy greens glow under the market lights. The seller sits calmly next to the stacked goods while people walk past in the darkness behind him, looking for the best ingredients for dinner." },
+            { file: "photo 14.jpg", desc: "Items are displayed under bright lights in the open-air market. The dirt ground is clearly visible, with motorcycles parked alongside the wooden stalls. The space between the stands is quiet, with plastic crates stacked and ready for business." },
+            { file: "photo 15.jpg", desc: "Closing time of the sunday bazar where the stuff is being packed, and ready to be loaded in a suzuki." }
+        ];
+
+        const gallery = document.getElementById('gallery');
+        
+        photos.forEach((item, index) => {
+            const row = document.createElement('div');
+            row.className = 'photo-row';
+            row.innerHTML = `
+                <div class="photo-img-container">
+                    <div class="img-wrapper">
+                        <img src="${item.file}" alt="Sunday Bazar ${index + 1}" onerror="this.parentElement.innerHTML='<div class=\'p-20 text-center text-gray-400 italic bg-gray-100\'>[ Image ${index + 1} Loading / Error ]</div>'">
+                    </div>
+                </div>
+                <div class="photo-text-container">
+                    <div class="text-xs font-bold text-yellow-600 mb-2 uppercase tracking-widest">Photograph ${index + 1}</div>
+                    <h3 class="text-2xl mb-4 text-gray-900">Visual Evidence</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">${item.desc}</p>
+                </div>
+            `;
+            gallery.appendChild(row);
+        });
+    </script>
+</body>
+</html>
